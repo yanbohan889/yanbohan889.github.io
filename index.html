@@ -1,1 +1,227 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>闫博涵 - 个人简历</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="shortcut icon" href="./assets/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="./assets/index.css">
+  <meta name="title" content="个人主页">
+  <meta name="description" content="数字名片制作，社交主页制作，简历模板，网页开发，网站制作，小程序开发，app开发">
+  <meta name="keywords" content="数字名片制作，社交主页制作，简历模板，网页开发，网站制作，小程序开发，app开发">
+</head>
+
+<body>
+  <canvas id="particle"></canvas>
+  <div class="container">
+    <!-- 左侧菜单 -->
+    <i class="fa-solid fa-bars collapsed-menu fa-2x" onclick="toggleNav()"></i>
+    <nav class="sidebar">
+      <div class="avatar-wraper" style="display: none;">
+        <img class="avatar-bg" src="./assets/avatar-bg.webp" />
+        <div class="avatar-container">
+          <img class="avatar" src="./assets/avatar.webp" />
+        </div>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('introduction')">
+            <i class="fa-solid fa-address-card"></i>基本信息
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('education')">
+            <i class="fa-solid fa-user-graduate"></i>教育背景
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('skill-list')">
+            <i class="fa-solid fa-briefcase"></i>技能
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('workexperience')">
+            <i class="fa-solid fa-diagram-project"></i>项目经验
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('rongyujiangli')">
+            <i class="fa-solid fa-award"></i>荣誉与奖励
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('ziwopingjia')">
+            <i class="fa-solid fa-circle-user"></i>自我评价
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="javascript:void(0)" class="nav-link" onclick="showSection('lianxifangshi')">
+            <i class="fa-solid fa-id-card"></i>联系方式
+          </a>
+        </li>
+        <!-- 其他菜单项（结构相同，修改图标和ID即可） -->
+      </ul>
+    </nav>
+    <!-- 右侧内容区域 -->
+    <section id="introduction" class="content-section active-section">
+      <div class="section-header">
+        <i class="fa-solid fa-address-card fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">基本信息</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <div class="base-info">
+          <div>姓名：闫博涵</div>
+          <div>联系电话：+86 18345017430</div>
+          <div>电子邮箱：<a href="mailto:caniuse@qq.com">y1354048194@163.com</a></div>
+          <div>地址：湖北省武汉市，华中农业大学</div>
+        </div>
+        <!-- <ul>
+          <li><i class="fa-solid fa-tag"></i> 软件工程专业，统招本科，专业基础知识扎实，热爱新技术，学习能力强。</li>
+          <li><i class="fa-solid fa-tag"></i> 精通JavaScript，Vue/React框架，熟悉uni-app/node/express/mysql/redis/webpack等。</li>
+          <li><i class="fa-solid fa-tag"></i> 有多个中大型项目开发经验，多年作为功能模块负责人经历，有一定的管理经验。</li>
+          <li><i class="fa-solid fa-tag"></i> 能独立完成前端研发流程，移动端、PC、微信小程序开发，应用分发上架管理。</li>
+          <li><i class="fa-solid fa-tag"></i> 良好的沟通理解协调能力，工作认真负责，和同事领导客户相处愉快。</li>
+          <li><i class="fa-solid fa-tag"></i> 英语水平读写熟练。</li>
+        </ul> -->
+      </div>
+    </section>
+    <section id="education" class="content-section">
+      <div class="section-header">
+        <i class="fa-solid fa-user-graduate fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">教育背景</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <div class="company-header">
+          <span>华中农业大学</span>
+          <!-- <span class="address">江苏，盐城</span> -->
+        </div>
+        <div class="job-title">
+          <span>硕士 · 植物营养学</span>
+          <span class="time">2024.09 - 至今</span> 
+        </div>
+        <!-- <div class="job-title">
+          <span>语言 · 中文 | 英语 CET-4</span>
+        </div> -->
+        <!-- <fieldset>
+          <legend>主要课程</legend>
+          <p>程序设计基础  |  面向对象程序设计  |  离散数学｜算法与数据结构  |  计算机网络  |  Java程序设计  |  面向对象程序设计实训  |  计算机操作系统  |  Linux/unix基础  |  Web程序设计  |  大学英语</p>
+        </fieldset> -->
+      </div>
+      <div class="content-wrapper">
+        <div class="company-header">
+          <span>黑龙江八一农垦大学</span>
+          <!-- <span class="address" style="display: none;">江苏，盐城</span> -->
+        </div>
+        <div class="job-title">
+          <span>本科 · 农业资源与环境</span>
+          <span class="time">2020.09 - 2024.06</span> 
+        </div>
+        <!-- <div class="job-title" style="display: none;">
+          <span>语言 · 中文 | 英语 CET-4</span>
+        </div> -->
+        <fieldset>
+          <legend>硕士研究方向</legend>
+          <p>方向：改性生物炭缓解酸性土壤铝毒新机制</p>
+          <p>内容：  
+          - 研究植物营养元素的吸收与利用机制。  
+          - 探索提高作物养分利用效率的方法。</p>
+        </fieldset>
+      </div>
+    </section>
+    <section id="skill-list" class="content-section">
+      <div class="section-header">
+        <i class="fa-solid fa-briefcase fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">技能</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <ul>
+          <li><i class="fa-solid fa-tag"></i> 实验技能：土壤分析、植物营养测定、实验室仪器操作</li>
+          <li><i class="fa-solid fa-tag"></i> 数据分析：熟练使用 Excel、SPSS、R 或 Python 进行数据分析</li>
+          <li><i class="fa-solid fa-tag"></i> 编程：基础 Python 或 R 语言</li>
+          <li><i class="fa-solid fa-tag"></i> 语言：英语（CET-6），具备良好的阅读和写作能力</li>
+        </ul>
+      </div>
+    </section>
+    <section id="workexperience" class="content-section">
+      <div class="section-header">
+        <i class="fa-solid fa-diagram-project fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">项目经验</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <div class="company-header">
+          <span>农业资源优化项目</span>
+          <span class="address">2023.03 - 2023.06</span>
+        </div>
+        <!-- <div class="job-title">
+          <span>前端开发工程师</span>
+          <span class="time">2023.03 - 2023.06</span>
+        </div> -->
+        <ul>
+          <li><i class="fa-solid fa-tag"></i> 参与项目设计与数据收集。</li>
+          <li><i class="fa-solid fa-tag"></i> 分析数据并撰写报告。</li>
+        </ul>
+      </div>
+      <div class="content-wrapper">
+        <div class="company-header">
+          <span>XXX 植物营养研究项目</span>
+          <span class="address">2024.09 - 至今</span>
+        </div>
+        <ul>
+          <li><i class="fa-solid fa-tag"></i> 设计实验方案并实施。</li>
+          <li><i class="fa-solid fa-tag"></i> 分析实验结果并撰写论文。</li>
+        </ul>
+      </div>
+    </section>
+    <section id="rongyujiangli" class="content-section">
+      <div class="section-header">
+        <i class="fa-solid fa-award fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">荣誉与奖励</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <ul>
+          <li><i class="fa-solid fa-tag"></i> 2023年：黑龙江八一农垦大学优秀毕业生</li>
+          <li><i class="fa-solid fa-tag"></i> 2022年：校级奖学金</li>
+          <li><i class="fa-solid fa-tag"></i> 2021年：全国大学生英语竞赛三等</li>
+        </ul>
+      </div>
+    </section>
+    <section id="ziwopingjia" class="content-section">
+      <div class="section-header">
+        <i class="fa-solid fa-circle-user fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">自我评价</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <ul>
+          <li><i class="fa-solid fa-tag"></i> 具备扎实的农业资源与环境、植物营养学专业知识。</li>
+          <li><i class="fa-solid fa-tag"></i> 热爱科研，具备较强的实验设计与数据分析能力。</li>
+          <li><i class="fa-solid fa-tag"></i> 良好的团队合作精神和沟通能力。</li>
+        </ul>
+      </div>
+    </section>
+    <section id="lianxifangshi" class="content-section">
+      <div class="section-header">
+        <i class="fa-solid fa-address-card fa-2x" style="color: var(--accent-color);"></i>
+        <a href="javascript:void(0)" class="section-title">联系方式</a>
+      </div>
+      <hr class="divider">
+      <div class="content-wrapper">
+        <ul>
+          <li><i class="fa-solid fa-tag"></i> 电话：+86 18345017430</li>
+          <li><i class="fa-solid fa-tag"></i> 邮箱：y1354048194@163.com</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="./utils/particle.js"></script>
+  <script type="text/javascript" src="./assets/index.js"></script>
+</body>
+
+</html>
